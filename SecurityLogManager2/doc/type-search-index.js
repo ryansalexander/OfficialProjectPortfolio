@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"edu.ncsu.csc316.security_log.data","l":"Timestamp"}]
