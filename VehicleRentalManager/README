@@ -1,0 +1,34 @@
+Vehicle Rental Manager Details
+
+This program was originally a project for my Data Structures course.
+
+The program reads a csv file and stores it as a graph/adjacency list.
+
+Here is an example of the file contents:
+
+START_DAY,END_DAY,COST,MAKE,MODEL
+1,2,85,Chevrolet,Tahoe
+1,4,255,Toyota,Prius
+2,5,220,Ford,Explorer
+4,5,50,Honda,Accord
+2,3,65,Jeep,Compass
+3,5,90,Ford,Explorer
+3,4,55,Kia,Soul
+1,5,500,Honda,CRV
+1,3,180,Chevrolet,Silverado
+2,4,90,Jeep,Cherokee
+
+Each line is comprised of the day a rental vehicle is available to rent, the day
+it must be returned, the cost for this rental, the make, and the model.
+
+The days act as vertices for the graph and the cost as weights for the edges.
+
+The commands are as follows:
+Rentals: view the cheapest rental option available from a start to end day
+	-Uses Dijkstra's algorithm to find the most inexpensive path on the graph
+Day: view a list of rentals available starting on a given day
+	-Lists the outgoing edges from a particular day
+Quit: exit the Vehicle Rental Manager
+Help: view the commands
+
+
