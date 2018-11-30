@@ -1,0 +1,7 @@
+START_DAY,END_DAY,COST,MAKE,MODEL
+1,2,85,Chevrolet,Tahoe
+1,4,255,Toyota,Prius
+2,3,65,Jeep,Compass
+3,4,55,Kia,Soul
+1,3,180,Chevrolet,Silverado
+2,4,90,Jeep,Cherokee
