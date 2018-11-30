@@ -1,6 +1,7 @@
 Vehicle Rental Manager Details
 
 This program was originally a project for my Data Structures course.
+It is a hypothetical system for checking out rental vehicles.
 
 The program reads a csv file and stores it as a graph/adjacency list.
 
