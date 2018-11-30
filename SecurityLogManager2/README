@@ -1,0 +1,32 @@
+Security Log Manager Details
+
+This program was originally a project for my Data Structures course.
+It is a hypothetical system for maintaining a hash table of actions by users.
+
+The program reads a txt file and stores the data in a hash table.
+
+Here is an example of the file contents:
+
+USERNAME, TIMESTAMP, ACTION, RESOURCE
+fzalcala, 04/26/2017 12:33:15PM, sort, ICD-9 Code 196
+fzalcala, 07/03/2017 12:36:05AM, sort, ICD-9 Code 196
+quhundley, 09/21/2017 08:50:13AM, import, office visit OV04312
+fzalcala, 08/04/2016 06:57:34AM, resolve, message M2964
+fzalcala, 10/07/2016 07:08:47AM, sort, ICD-9 Code 196
+quhundley, 11/20/2016 02:07:54PM, sort, ICD-9 Code 196
+
+Each line is comprised of the day a username, a timestamp, the action
+the user performed, and the resource accessed.
+
+This information is hashed using Fibonacci hashing and stored.
+
+The commands are as follows:
+Profile: generate an Operational Profile between two times
+	-Retrieve data between these times from the hashtable
+	-Sort the data as a list using mergesort before output
+Report: generate a User Report for a particular username
+	-Retrieve data related to a particular username from the hashtable
+	-Sort the data as a list using mergesort before output
+Quit: exit the Security Log Manager
+Help: view the commands
+
