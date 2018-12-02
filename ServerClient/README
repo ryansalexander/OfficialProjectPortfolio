@@ -1,0 +1,41 @@
+Server and Client Details
+
+This program was originally a project for my Operating Systems course.
+It uses a sliding puzzle to demonstrate communication between a client and server via message queues.
+
+The two files server.c and client.c can be compiled on two different Linux terminals
+and will be able to communicate with each other.
+
+The programs can be compiled using the following commands, respectively:
+
+$ gcc -D_POSIX_SOURCE -Wall -g -std=c99 -o server server.c -lrt
+$ gcc -Wall -g -std=c99 -o client client.c -lrt
+
+The following commands can be used in the client's terminal to shift the board:
+
+$ ./client up
+$ ./client down
+$ ./client left
+$ ./client right
+The final command: can be used to print the current board:
+$ ./client board
+
+The server must be compiled and executed first. It can be executed with:
+$ ./server
+
+Here is an example after the server has been compiled and executed, followed
+by the compilation of the client:
+$ ./client board
+ 1  2  3  4
+ 5  6  7  8
+ 9 10 11 12
+13 14 15  -
+$ ./client down
+success
+$ ./client board
+ 1  2  3  4
+ 5  6  7  8
+ 9 10 11  -
+13 14 15 12
+
+Both can be killed with ctrl-C. When the server is killed with ctrl-C, it will show the final board state.
